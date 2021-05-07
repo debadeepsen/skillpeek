@@ -1,0 +1,133 @@
+:root {
+    --main-color: tomato;
+    --alt-color: coral;
+    --grey: grey;
+    --dark-grey: #554e4e;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd3;
+    overflow-x: hidden;
+}
+
+#app {
+    font-family: "Heebo", "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-align: center; */
+    color: var(--dark-grey);
+    position: absolute;
+    top: 0;
+    min-width: 100vw;
+}
+
+.main-view {
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    top: 80px;
+    padding-bottom: 80px;
+}
+
+.default-container {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:1024px) {
+    .default-container {
+        width: 90vw;
+    }
+}
+
+.f-row {
+    display: flex;
+    flex-direction: row
+}
+
+.fas {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: "Shippori Mincho";
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+h2, h3, h4 {
+    font-family: "Roboto Slab";
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 2px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--alt-color);
+}
+
+.company-box {
+    display: block;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #2222;
+    margin-bottom: 15px;
+    transition: all 0.2s;
+    background: #fff;
+}
+
+.company-box:hover {
+    /* font-size: larger; */
+    box-shadow: 2px 2px 8px #2223;
+    transform: translate(-2px, -2px);
+}
+
+/* .company-box:hover::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: tomato;
+} */
+
+.c-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.c-row>div:nth-child(1) {
+    /* border: 1px solid; */
+    margin-right: 15px;
+}
+
+.c-row>div:nth-child(2) {
+    margin-right: 15px;
+}
+
+.c-row>div:nth-child(3) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.c-row h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.job-bubble {
+    color: #777;
+    /* background-color: #fed5; */
+    font-size: 0.75rem;
+}
